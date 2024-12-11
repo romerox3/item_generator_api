@@ -1,6 +1,6 @@
 # Item Generator API
 
-API para generar items aleatorios basados una palabra clave para un juego de rol.
+API para generar items aleatorios para un juego de rol mediante un prompt al modelo de stable-diffusion-v1-5 utilizando una palabra clave.
 
 ## Endpoints
 
