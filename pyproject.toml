@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "item_generator_api"
+version = "0.1.0"
+description = "API para generar ítems en Game of Roles v2"
+authors = ["Tu Nombre <tu@email.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+Flask = "3.0.2"
+Flask-SQLAlchemy = "3.1.1"
+Flask-Migrate = "4.0.5"
+Flask-CORS = "4.0.0"
+psycopg2-binary = "2.9.9"
+flask-marshmallow = "1.1.0"
+marshmallow-sqlalchemy = "0.30.0"
+diffusers = "0.27.2"
+transformers = "4.38.2"
+accelerate = "0.27.2"
+numpy = "1.26.4"
+rembg = "2.0.59"
+torch = {version = "2.1.0", source = "pytorch"}
+torchvision = {version = "0.16.0", source = "pytorch"}
+torchaudio = {version = "2.1.0", source = "pytorch"}
+pillow = "^9.5.0"
+opencv-python = "^4.7.0"
+animatediff-lightning = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
